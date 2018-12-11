@@ -78,7 +78,7 @@ app.get('/recipes', (req, res) => {
 })
 
 app.delete('/recipes/:id', (req,res) => {
-  Rshoppecipes.delete(req.params.id);
+  Recipes.delete(req.params.id);
   res.status(204).end();
 })
 
